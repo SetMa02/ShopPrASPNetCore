@@ -20,7 +20,7 @@ namespace ShopPr
         {
             services.AddTransient<IAllCars,MockCars>();
             services.AddTransient<ICarsCategory,MockCategory>();
-            services.AddMvc();
+            services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

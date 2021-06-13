@@ -13,25 +13,25 @@ namespace ShopPr.Data.mocks
 
         private readonly ICarsCategory _catregoryCars = new MockCategory();
 
-        public IEnumerable<Car> cars 
+        public IEnumerable<Car> Cars
         {
             get
             {
                 return new List<Car>
                 {
-                    new Car{name = "Tesla", 
+                    new Car{name = "Tesla",
                         shortDesc = "соврекменный электромобиль",
-                        longDesc = "", 
-                        img = "https://images.drive.ru/i/0/5f6c5369ec05c4fe2700000f.jpg", 
+                        longDesc = "",
+                        img = "/img/tesla.jpg",
                         price = 45000,
-                        isFavorite = true, 
+                        isFavorite = true,
                         availeble = true,
                         Category = _catregoryCars.allCetegoryes.First()},
 
                      new Car{name = "Ford Fiesta",
                         shortDesc = "удобный и тихий",
                         longDesc = "Удобный автомобилдь для городской жизни",
-                        img = "https://www.masmotors.ru/colors/ford-fiesta/1.png",
+                        img = "/img/Ford_Fiesta.png",
                         price = 11000,
                         isFavorite = true,
                         availeble = true,
@@ -40,13 +40,14 @@ namespace ShopPr.Data.mocks
                        new Car{name = "BMW M3",
                         shortDesc = "Дерзкий и стильный",
                         longDesc = "Крутой автомабль на все случаи жизни",
-                        img = "https://kolesa-uploads.ru/-/e292722e-bb3d-41af-8770-3cfaf1cffaa5/bmw-m3-new-front2.jpg",
+                        img = "/img/BMW_M3",
                         price = 65000,
                         isFavorite = false,
                         availeble = false,
                         Category = _catregoryCars.allCetegoryes.Last()}
                 };
             }
+            
         }
         public IEnumerable<Car> getFavouriteCars { get; set; }
 

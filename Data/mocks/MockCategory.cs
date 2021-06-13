@@ -18,7 +18,7 @@ namespace ShopPr.Data.mocks
                 {
                     new Category{ categoryName = "Электромобиль",  desc = "экологический вид транспорта"},
                     new Category{ categoryName = "Классический автомобиль", desc = "Машина сдвигателем внутреннего сгорания"}
-                }
+                };
             }
         }
        
