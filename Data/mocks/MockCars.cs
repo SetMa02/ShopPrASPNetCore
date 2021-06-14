@@ -40,7 +40,7 @@ namespace ShopPr.Data.mocks
                        new Car{name = "BMW M3",
                         shortDesc = "Дерзкий и стильный",
                         longDesc = "Крутой автомабль на все случаи жизни",
-                        img = "/img/BMW_M3",
+                        img = "/img/BMW_M3.jpg",
                         price = 65000,
                         isFavorite = false,
                         availeble = false,
