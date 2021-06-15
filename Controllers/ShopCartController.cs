@@ -15,9 +15,9 @@ namespace ShopPr.Controllers
         private readonly IAllCars carRepository;
         private readonly ShopCart shopCart;
 
-        public ShopCartController(IAllCars carRep, ShopCart shopCart)
+        public ShopCartController(IAllCars carRepository, ShopCart shopCart)
         {
-            carRep = carRepository;
+            this.carRepository = carRepository;
             this.shopCart = shopCart; 
 
         }
@@ -27,7 +27,7 @@ namespace ShopPr.Controllers
             var items = shopCart.getShopItems();
             shopCart.listShopItems = items;
 
-            var obj = new ShopCartViewModel
+            ShopCartViewModel obj = new ShopCartViewModel
             {
                 shopCart = shopCart
             };
